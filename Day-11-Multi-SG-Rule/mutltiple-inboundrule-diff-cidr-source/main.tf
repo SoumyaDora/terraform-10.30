@@ -1,5 +1,5 @@
-resource "aws_security_group" "devops_project_veera" {
-  name        = "devops-project-veera"
+resource "aws_security_group" "Multi-sg-rule" {
+  name        = "Multi-sg-rule"
   description = "Allow restricted inbound traffic"
 
   ingress = [
@@ -48,6 +48,6 @@ resource "aws_security_group" "devops_project_veera" {
   }
 
   tags = {
-    Name = "devops-project-veera"
+    Name = "Multi-sg-rule"
   }
 }
